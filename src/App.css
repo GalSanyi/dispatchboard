@@ -1,0 +1,23 @@
+.app {
+  display: grid;
+  grid-template-columns: 15rem minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.app main {
+  padding: 2rem;
+}
+
+@media (max-width: 640px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .app aside {
+    min-height: auto;
+  }
+
+  .app aside nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
