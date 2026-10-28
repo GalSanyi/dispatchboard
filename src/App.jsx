@@ -1,13 +1,14 @@
-
 import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Sidebar from './components/sidebar/Sidebar.jsx';
+import TopBar from './components/topbar/TopBar.jsx';
 
 function App() {
   return (
     <div className="app">
       <Sidebar />
       <main>
+      <TopBar />
         <Routes>
           <Route path="/" element={<Navigate to="/eta-calculator" replace />} />
           <Route path="/eta-calculator" element={<h1>ETA calculator</h1>} />

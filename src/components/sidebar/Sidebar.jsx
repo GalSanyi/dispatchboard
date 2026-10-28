@@ -1,47 +1,37 @@
 import './Sidebar.css';
 import { NavLink } from 'react-router-dom';
 
+const menuItems = [
+  { label: 'ETA calculator', path: '/eta-calculator' },
+  { label: 'Trips', path: '/trips' },
+  { label: 'Drivers', path: '/drivers' },
+  { label: 'Vehicles', path: '/vehicles' },
+  { label: 'Documents (CMR)', path: '/documents' },
+  { label: 'Reports', path: '/reports' },
+];
+
 export default function Sidebar() {
   return (
-    <section className="sidebar">
-      <div className="sidebar__header-mai">
+    <aside className="sidebar">
+      <div className="sidebar__header-main">
         <NavLink to="/" className="sidebar__logo">
-         <div className="sidebar__logo-icon"></div>
+          <span className="sidebar__logo-icon" aria-hidden="true" />
           DispatchBoard
         </NavLink>
       </div>
-      <nav className="sidebar__nav">
-        <div className="sidebar__header">
-          <NavLink className="sidebar__link" to="/eta-calculator">
-            ETA calculator
+      <nav className="sidebar__nav" aria-label="Main navigation">
+        {menuItems.map(item => (
+          <NavLink
+            key={item.path}
+            className={({ isActive }) =>
+              `sidebar__link${isActive ? ' sidebar__link--active' : ''}`
+            }
+            to={item.path}
+          >
+            {item.label}
           </NavLink>
-        </div>
-        <div className="sidebar__header">
-          <NavLink className="sidebar__link" to="/trips">
-            Trips
-          </NavLink>
-        </div>
-        <div className="sidebar__header">
-          <NavLink className="sidebar__link" to="/drivers">
-            Drivers
-          </NavLink>
-        </div>
-        <div className="sidebar__header">
-          <NavLink className="sidebar__link" to="/vehicles">
-            Vehicles
-          </NavLink>
-        </div>
-        <div className="sidebar__header">
-          <NavLink className="sidebar__link" to="/documents">
-            Documents (CMR)
-          </NavLink>
-        </div>
-        <div className="sidebar__header"  >
-          <NavLink className="sidebar__link" to="/reports">
-            Reports
-          </NavLink>
-        </div>
+        ))}
       </nav>
-    </section>
+    </aside>
   );
 }
