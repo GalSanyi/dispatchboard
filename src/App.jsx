@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Sidebar from './components/sidebar/Sidebar.jsx';
 import TopBar from './components/topbar/TopBar.jsx';
+import EtaCalculator from './pages/EtaCalculator/EtaCalculator.jsx';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <TopBar />
         <Routes>
           <Route path="/" element={<Navigate to="/eta-calculator" replace />} />
-          <Route path="/eta-calculator" element={<h1>ETA calculator</h1>} />
+          <Route path="/eta-calculator" element={<EtaCalculator />} />
           <Route path="/trips" element={<h1>Trips</h1>} />
           <Route path="/drivers" element={<h1>Drivers</h1>} />
           <Route path="/vehicles" element={<h1>Vehicles</h1>} />

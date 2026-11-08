@@ -1,0 +1,108 @@
+.input-field {
+    box-sizing: border-box;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px 20px;
+    width: 380px;
+    height: 442px;
+    background: #fff;
+}
+
+.input-field__input,
+.input-field__button {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.input-field__text {
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.input-field__label {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field__input {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0 14px;
+    width: 340px;
+    height: 42px;
+}
+
+.input-field__input:focus {
+    outline: none;
+    border-color: #e5e7eb;
+    box-shadow: 0 0 0 1px #e5e7eb;
+}
+
+.input-field__label-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.input-field__control {
+    position: relative;
+    display: block;
+
+}
+
+.input-field__unit {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-family: var(--font-family);
+    font-size: 13px;
+    color: #6b7280;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.input-field__input[type="number"] {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+.input-field__input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.input-field__input[type="number"]::-webkit-inner-spin-button,
+.input-field__input[type="number"]::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+.input-field__button {
+    border-radius: 8px;
+    padding: 12px 18px;
+    width: 338px;
+    height: 41px;
+    background: var(--secondary-color);
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+
+.input-field__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.input-field__label-text {
+    margin-bottom: 6px;
+}

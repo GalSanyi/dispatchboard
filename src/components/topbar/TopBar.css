@@ -18,8 +18,7 @@
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     padding: 10px 16px;
-    width: 103px;
-    height: 42px;
+    padding: 10px 16px;
     background: #fff;
     gap: 5px;
     font-family: var(--font-family);
@@ -35,13 +34,12 @@
     gap: 5px;
     border-radius: 8px;
     padding: 10px 16px;
-    width: 113px;
-    height: 40px;
+    padding: 10px 16px;
     background: #2563eb;
     border: none;
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
-    color: #fff;
+    border: 1px solid transparent;
     cursor: pointer;
 }
