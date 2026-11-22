@@ -1,4 +1,4 @@
-import InputField from '../../components/InputField/InputField';
+import TripInputs from './components/TripInputs/TripInputs';
 import './EtaCalculator.css';
 export default function EtaCalculator() {
   return (
@@ -10,7 +10,7 @@ export default function EtaCalculator() {
           Sample data
         </p>
       </div>
-      <InputField />
+      <TripInputs />
     </section>
   );
 }

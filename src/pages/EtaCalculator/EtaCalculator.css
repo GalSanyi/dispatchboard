@@ -18,3 +18,16 @@
 .title {
     margin-bottom: 24px;
 }
+
+.input-field__button {
+    border-radius: 8px;
+    padding: 12px 18px;
+    width: 338px;
+    height: 41px;
+    background: var(--secondary-color);
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}

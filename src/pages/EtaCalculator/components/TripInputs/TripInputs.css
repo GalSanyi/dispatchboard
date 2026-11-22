@@ -1,0 +1,9 @@
+.trips-input {
+    box-sizing: border-box;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px 20px;
+    width: 380px;
+    height: 442px;
+    background: #fff;
+}
