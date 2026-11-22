@@ -1,6 +1,13 @@
 import './InputField.css';
 
-export default function InputField({ label, type, suffix, defaultValue }) {
+export default function InputField({
+  label,
+  type,
+  suffix,
+  defaultValue,
+  value,
+  onChange,
+}) {
   return (
     <label className="input-field__label">
       <span className="input-field__label-text">{label}</span>
@@ -9,6 +16,8 @@ export default function InputField({ label, type, suffix, defaultValue }) {
         <input
           type={type}
           className="input-field__input"
+          value={value}
+          onChange={onChange}
           defaultValue={defaultValue}
         />
 
